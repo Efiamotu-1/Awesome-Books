@@ -1,0 +1,24 @@
+* {
+  list-style: none;
+}
+
+#form {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+#title {
+	width: 200px;
+	margin-top: 30px;
+}
+
+#author {
+	width: 200px;
+	margin-top: 30px;
+}
+
+#add {
+	width: 100px;
+	margin-top: 30px;
+}
