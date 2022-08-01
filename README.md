@@ -1,56 +1,53 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
-
-> Description the project.
+# This website enables you to save your favourite books.
+![](resources/screen.png)
+> Save your favourite books.
 
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- JavaScript, HTML and CSS
 
-## Live Demo (if available)
+## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://efiamotu-1.github.io/Awesome-Books/)
 
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
+
 
 
 To get a local copy up and running follow these simple example steps.
 
-### Prerequisites
+### Prerequisites 
+No prerequisites
 
 ### Setup
+Clone the repsoitory to your local system.
 
 ### Install
+Run in your code-editor.
 
 ### Usage
-
-### Run tests
-
-### Deployment
-
-
+You can use it for viewing my professional details.
 
 ## Authors
 
-👤 **Author1**
+👤 Habeeb Efiamotu Musa
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@githubhandle](https://github.com/Efiamotu-1)
+- Twitter: [@twitterhandle](https://twitter.com/EFYAMOTU)
+- LinkedIn: [LinkedIn]()
 
-👤 **Author2**
+👤 Divyansh Singh
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@githubhandle](https://github.com/divyanshthinks)
+- Twitter: [@twitterhandle](https://twitter.com/Devilstheory1)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/divyansh-singh-a78709157/)
+
+
 
 ## 🤝 Contributing
 
@@ -62,11 +59,6 @@ Feel free to check the [issues page](../../issues/).
 
 Give a ⭐️ if you like this project!
 
-## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
 
 ## 📝 License
 
