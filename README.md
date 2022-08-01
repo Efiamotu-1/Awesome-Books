@@ -35,11 +35,11 @@ You can use it for viewing my professional details.
 
 ## Authors
 
-👤 Habeeb Efiamotu Musa
+👤 **Habeeb Musa Efiamotu**
 
 - GitHub: [@githubhandle](https://github.com/Efiamotu-1)
 - Twitter: [@twitterhandle](https://twitter.com/EFYAMOTU)
-- LinkedIn: [LinkedIn]()
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/musa-habeeb/)
 
 👤 Divyansh Singh
 
