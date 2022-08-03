@@ -46,6 +46,15 @@ hr {
 
 #title {
   margin-bottom: 15px;
+<<<<<<< HEAD
+}
+
+#author {
+  margin-bottom: 15px;
+=======
+  margin-top: 1rem;
+
+>>>>>>> 4120aedd249997a401f7492b2c46d620c251dc3e
 }
 
 #author {
