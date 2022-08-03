@@ -1,46 +1,60 @@
-let books = [];
-if (localStorage.books) books = JSON.parse(localStorage.getItem('books'));
+/* eslint-disable max-classes-per-file */
+const creatli = document.getElementById('list-cr');
 
-function createbooks() {
-  let card = '';
-
-  const booklist = document.getElementById('list-cr');
-  for (let i = 0; i < books.length; i += 1) {
-    const eachBook = `
-       <ul>
-       <li>${books[i].name}</li>
-       <li>${books[i].author}</li>
-       <li><button data-index = "${i}" class="remove">remove</button></li>
-       </ul>
-       `;
-    card += eachBook;
-  }
-  booklist.innerHTML = card;
-
-  document.querySelectorAll('.remove').forEach((element) => element.addEventListener('click', (event) => {
-    const getindex = event.currentTarget.dataset.index;
-    books.splice(parseInt(getindex, 5), 1);
-    createbooks();
-    localStorage.setItem('books', JSON.stringify(books));
-  }));
-}
-
-createbooks();
-
-const newtitle = document.getElementById('title');
+const booktitle = document.getElementById('title');
 const auth = document.getElementById('author');
 
-function addbook() {
-  const book = {};
-  book.name = newtitle.value;
-  book.author = auth.value;
-  books.push(book);
-  createbooks();
-  localStorage.setItem('books', JSON.stringify(books));
+class Book {
+  constructor(title, author) {
+    this.title = title;
+    this.author = author;
+  }
 }
 
-const addbtn = document.getElementById('add');
+class Bookadd {
+  constructor() {
+    this.books = [];
+    if (localStorage.books) this.books = JSON.parse(localStorage.getItem('books'));
+  }
 
-addbtn.addEventListener('click', () => {
-  addbook();
+  additems() {
+    let cards = '';
+    for (let i = 0; i < this.books.length; i += 1) {
+      const items = `
+        <ul class="book-items">
+        <li>${this.books[i].title} by ${this.books[i].author} </li>
+        <button type="button" data-index = "${i}" class="remove"  onclick="bookplus.removeBooks(event)">remove</button>
+        </ul>
+        `;
+
+      cards += items;
+    }
+
+    creatli.innerHTML = cards;
+  }
+
+  addBook() {
+    const book = new Book(booktitle.value, auth.value);
+    this.books.push(book);
+    this.additems();
+    localStorage.setItem('books', JSON.stringify(this.books));
+    booktitle.value = '';
+    auth.value = '';
+  }
+
+  removeBooks(event) {
+    const getindex = event.currentTarget.dataset.index;
+    this.books.splice(parseInt(getindex, 5), 1);
+    this.additems();
+    localStorage.setItem('books', JSON.stringify(this.books));
+  }
+}
+
+const bookplus = new Bookadd();
+bookplus.additems();
+
+const btnadd = document.getElementById('add');
+
+btnadd.addEventListener('click', () => {
+  bookplus.addBook();
 });
