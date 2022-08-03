@@ -5,20 +5,25 @@
 #form {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  align-items: center;
+  gap: .5rem;
+}
+
+.form-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #title {
   width: 200px;
-  margin-top: 30px;
 }
 
 #author {
   width: 200px;
-  margin-top: 30px;
 }
 
 #add {
-  width: 100px;
-  margin-top: 30px;
+  width: 4rem;
+  align-self: flex-end;
 }
