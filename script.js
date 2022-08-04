@@ -1,3 +1,4 @@
+/* eslint-disable max-classes-per-file */
 const creatli = document.getElementById('list-cr');
 
 const booktitle = document.getElementById('title');
