@@ -2,8 +2,30 @@ body {
   background: none;
 }
 
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  width: 96%;
+  margin: 1rem auto 0;
+  border: solid 1px #000;
+}
+
+nav > ul {
+  display: flex;
+  gap: 1.5rem;
+}
+
+
 #list-cr {
-  border: 3px solid black;
+  border: 1px solid black;
+  height: auto;
+  margin: 2rem .5rem;
+  display: block;
+}
+
+#all-books h1 {
+  text-align: center;
 }
 
 .book-items {
@@ -33,6 +55,7 @@ hr {
 
 #add {
   margin-left: 100px;
+  margin-top: .5rem;
 }
 
 #form-head {
@@ -46,4 +69,50 @@ hr {
 
 #title {
   margin-bottom: 15px;
+  margin-top: 1rem;
+}
+
+#contact {
+  display: flex;
+  flex-direction: column;
+}
+
+#contact > * {
+  width: 50%;
+  margin: 2rem auto;
+}
+
+#contact a {
+  text-decoration: underline;
+}
+
+#contact > ul {
+  list-style: square;
+  padding-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+
+
+footer {
+  width: 96%;
+  border: solid 1px #000;
+  padding: 1rem;
+  margin: 0 auto 1rem;
+}
+
+/*
+Activate and Deactivate styles
+*/
+.hide-class {
+  position: fixed;
+  top: 0;
+  left: -110%;
+  transition-duration: 0.4s;
+}
+
+.hide-class.active {
+  left: 0;
 }
