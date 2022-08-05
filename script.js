@@ -58,3 +58,42 @@ const btnadd = document.getElementById('add');
 btnadd.addEventListener('click', () => {
   bookplus.addBook();
 });
+
+// Show and remove sections
+const allBooks = document.getElementById('all-books');
+const addNewBook = document.getElementById('add-new-book');
+const contact = document.getElementById('contact');
+const list = document.getElementById('list-link');
+const add = document.getElementById('add-link');
+const contactLink = document.getElementById('contact-link');
+
+allBooks.classList.add('active');
+allBooks.classList.remove('hide-class');
+
+function showSection(activeElement) {
+  activeElement.classList.toggle('active');
+  activeElement.classList.remove('hide-class');
+}
+
+function removeSection(element1, element2) {
+  element1.classList.remove('active');
+  element1.classList.add('hide-class');
+
+  element2.classList.remove('active');
+  element2.classList.add('hide-class');
+}
+
+list.addEventListener('click', () => {
+  showSection(allBooks);
+  removeSection(addNewBook, contact);
+});
+
+add.addEventListener('click', () => {
+  showSection(addNewBook);
+  removeSection(allBooks, contact);
+});
+
+contactLink.addEventListener('click', () => {
+  showSection(contact);
+  removeSection(allBooks, addNewBook);
+});

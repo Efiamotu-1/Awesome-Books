@@ -9,20 +9,48 @@
   <script src="./script.js" defer></script>
 </head>
 <body>
-  <h1>Awesome books</h1>
-
-  <section class="append">
+  <header>
+  <nav>
+    <a href="index.html">Awesome Books</a>
+    <ul>
+      <li><a href="#" id="list-link">List</a></li>
+      <li><a href="#" id="add-link">Add Books</a></li>
+      <li><a href="#" id="contact-link">Contact</a></li>
+    </ul>
+  </nav>
+  <p id="date">August 5th 2022, 6:07 PM</p>
+</header>
+  <section class="append hide-class " id="all-books">
+    
+    <h1>All Awesome Books</h1>
     <div id="list-cr">
 
     </div>
     </section>
-  <form action="#" id="form">
-    <label for="title"></label>
-    <input type="text" id="title" placeholder="Title">
-    <label for="author"></label>
-    <input type="text" id="author" placeholder="Author">
-    <label for="add"></label>
-    <button id="add">Add</button>
-  </form>
+
+    <section id="add-new-book" class="hide-class">
+      <form action="#" id="form">
+        <label for="title"></label>
+        <input type="text" id="title" placeholder="Title">
+        <label for="author"></label>
+        <input type="text" id="author" placeholder="Author">
+        <label for="add"></label>
+        <button id="add">Add</button>
+      </form>
+    </section>
+
+    <section id="contact" class="hide-class">
+      <h2>Contact Information</h2>
+      <p>Do you have any questions or just want to say "Hello"? You can reach out to us!</p>
+      <ul>
+        <li>Our email <a href="mailto:mail@mail.com">mail@mail.com</a>.</li>
+        <li>Our phone number <a href="tel:+18005551234">+1 800 5551235</a>.</li>
+        <li>Our address: Broad St 4321, 12345 City, Country.</li>
+      </ul>
+    </section>
+
+    <footer>
+      <p>&copy;Copyright 2022. All rights reserved.</p>
+    </footer>
 </body>
 </html>
