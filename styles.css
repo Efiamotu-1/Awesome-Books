@@ -68,6 +68,8 @@ hr {
 #add {
   margin-left: 100px;
   margin-top: 0.5rem;
+  margin-left: 300px;
+  border: 2px solid black;
 }
 
 #form-head {
@@ -79,9 +81,20 @@ hr {
   text-align: center;
 }
 
+#date {
+  text-align: right;
+}
+
 #title {
   margin-bottom: 15px;
   margin-top: 1rem;
+  border: 4px solid black;
+  width: 400px;
+}
+
+#author {
+  border: 4px solid black;
+  width: 400px;
 }
 
 #contact {
