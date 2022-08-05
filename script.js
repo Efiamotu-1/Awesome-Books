@@ -59,26 +59,23 @@ btnadd.addEventListener('click', () => {
   bookplus.addBook();
 });
 
-
-/*
-Activate and Deactivate Sections
-*/
-const allBooksSection = document.getElementById('all-books');
-const addNewBookSection = document.getElementById('add-new-book');
-const contactSection = document.getElementById('contact');
-const listLink = document.getElementById('list-link');
-const addLink = document.getElementById('add-link');
+// Show and remove sections
+const allBooks = document.getElementById('all-books');
+const addNewBook = document.getElementById('add-new-book');
+const contact = document.getElementById('contact');
+const list = document.getElementById('list-link');
+const add = document.getElementById('add-link');
 const contactLink = document.getElementById('contact-link');
 
-allBooksSection.classList.add('active');
-allBooksSection.classList.remove('hide-class');
+allBooks.classList.add('active');
+allBooks.classList.remove('hide-class');
 
-function toggleVisbility(activeEle) {
-  activeEle.classList.toggle('active');
-  activeEle.classList.remove('hide-class');
+function showSection(activeElement) {
+  activeElement.classList.toggle('active');
+  activeElement.classList.remove('hide-class');
 }
 
-function clearClasses(element1, element2) {
+function removeSection(element1, element2) {
   element1.classList.remove('active');
   element1.classList.add('hide-class');
 
@@ -86,17 +83,17 @@ function clearClasses(element1, element2) {
   element2.classList.add('hide-class');
 }
 
-listLink.addEventListener('click', () => {
-  toggleVisbility(allBooksSection);
-  clearClasses(addNewBookSection, contactSection);
+list.addEventListener('click', () => {
+  showSection(allBooks);
+  removeSection(addNewBook, contact);
 });
 
-addLink.addEventListener('click', () => {
-  toggleVisbility(addNewBookSection);
-  clearClasses(allBooksSection, contactSection);
+add.addEventListener('click', () => {
+  showSection(addNewBook);
+  removeSection(allBooks, contact);
 });
 
 contactLink.addEventListener('click', () => {
-  toggleVisbility(contactSection);
-  clearClasses(allBooksSection, addNewBookSection);
+  showSection(contact);
+  removeSection(allBooks, addNewBook);
 });
